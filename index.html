@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mumbai University CGPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport"
+    content="width=device-width,
+    initial-scale=1.0">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Mumbai University CGPA Calculator 🎓</h1>
+
+    <div class="tabs">
+        <button onclick="showSection('basic', this)">Basic</button>
+        <button onclick="showSection('subject', this)">Subject-wise</button>
+        <button onclick="showSection('credit', this)">Credit-Based</button>
+    </div>
+
+    <!-- BASIC -->
+    <div id="basic" class="section">
+        <h3>Percentage → CGPA</h3>
+        <input type="number" id="percentage" placeholder="Enter percentage">
+        <button onclick="calculateCGPA()">Convert</button>
+        <h2 id="result"></h2>
+
+        <hr>
+
+        <h3>CGPA → Percentage</h3>
+        <input type="number" id="cgpaInput" placeholder="Enter CGPA">
+        <button onclick="calculatePercentage()">Convert</button>
+        <h2 id="result2"></h2>
+    </div>
+
+    <!-- SUBJECT -->
+    <div id="subject" class="section" style="display:none;">
+        <h3>Subject-wise Calculator</h3>
+
+        <div class="grid">
+            <input type="number" id="sub1" placeholder="Subject 1">
+            <input type="number" id="sub2" placeholder="Subject 2">
+            <input type="number" id="sub3" placeholder="Subject 3">
+            <input type="number" id="sub4" placeholder="Subject 4">
+            <input type="number" id="sub5" placeholder="Subject 5">
+        </div>
+
+        <button onclick="calculateOverall()">Calculate</button>
+        <h2 id="overallResult"></h2>
+    </div>
+
+    <!-- CREDIT -->
+    <div id="credit" class="section" style="display:none;">
+        <h3>Credit-Based CGPA</h3>
+
+        <div class="grid">
+            <input type="number" id="m1" placeholder="Marks 1">
+            <input type="number" id="c1" placeholder="Credit 1">
+            <input type="number" id="m2" placeholder="Marks 2">
+            <input type="number" id="c2" placeholder="Credit 2">
+            <input type="number" id="m3" placeholder="Marks 3">
+            <input type="number" id="c3" placeholder="Credit 3">
+        </div>
+
+        <button onclick="calculateCreditCGPA()">Calculate</button>
+        <h2 id="creditResult"></h2>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
