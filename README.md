@@ -9,5 +9,5 @@ A web-based CGPA calculator built using HTML, CSS, and JavaScript.
 - KT Detection
 - Clean Responsive UI
 
-## Live Website
+## Live Website 
 https://shubhamshivane21-create.github.io/mu-cgpa-calculator/
