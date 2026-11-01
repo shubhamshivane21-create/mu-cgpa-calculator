@@ -14,6 +14,4 @@ https://shubhamshivane21-create.github.io/mu-cgpa-calculator/
 
 
 
-
-
  
