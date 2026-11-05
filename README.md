@@ -13,4 +13,3 @@ A web-based CGPA calculator built using HTML, CSS, and JavaScript.
 https://shubhamshivane21-create.github.io/mu-cgpa-calculator/
 
 
- 
